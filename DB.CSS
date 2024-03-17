@@ -1,0 +1,87 @@
+.main {
+    border: 3px solid black;
+    height: 500px;
+    margin-top: 100px;
+    background: rgb(145, 217, 240);
+}
+
+.face {
+    background: chartreuse;
+    height: 150px;
+    width: 150px;
+    border-radius: 50% 50% 0 0;
+    margin: auto;
+    margin-top: 20px;
+    animation: shakeFace 0.5s infinite alternate; 
+}
+
+.eyes {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 100px;
+}
+
+.leye, .reye {
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background: black;
+}
+
+.body1 {
+    display: flex;
+    justify-content: space-evenly;
+    width: 250px;
+    margin: auto;
+    margin-top: 10px;
+}
+
+.larm, .rarm {
+    height: 75px;
+    width: 25px;
+    background: chartreuse;
+    border-radius: 50px;
+    margin-top: 10px;
+    animation: danceHands 0.5s infinite alternate; 
+}
+
+.center {
+    height: 150px;
+    width: 150px;
+    background: chartreuse;
+    border-radius: 0 0 40% 40%;
+}
+
+.legs {
+    display: flex;
+    justify-content: space-evenly;
+    width: 150px;
+    margin: auto;
+    margin-top: -20px;
+}
+
+.lleg, .rleg {
+    height: 75px;
+    width: 25px;
+    background: chartreuse;
+    border-radius: 50px;
+    animation: danceLegs 0.5s infinite alternate; 
+}
+
+@keyframes shakeFace {
+    0% { transform: rotate(-5deg); }
+    50% { transform: rotate(5deg); }
+    100% { transform: rotate(-5deg); }
+}
+
+@keyframes danceHands {
+    0% { transform: rotate(-10deg); }
+    50% { transform: rotate(10deg); }
+    100% { transform: rotate(-10deg); }
+}
+
+@keyframes danceLegs {
+    0% { transform: rotate(-5deg); }
+    50% { transform: rotate(5deg); }
+    100% { transform: rotate(-5deg); }
+}
